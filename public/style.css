@@ -1,0 +1,36 @@
+#app {
+  border: 2px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator-main {
+  border: 2px solid black;
+  width: 30%;
+  height: 75%;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.all-btns {
+  border: 1px solid red;
+  display: flex;
+}
+
+.number-display {
+  border: 1px solid black;
+  height: 60px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.number-btns button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
