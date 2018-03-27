@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Landing from './components/Landing'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Calculator from './components/Calculator';
 
-ReactDOM.render(<Landing />, document.getElementById('app'))
+ReactDOM.render(<Calculator />, document.getElementById('app'));
