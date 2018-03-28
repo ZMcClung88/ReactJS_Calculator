@@ -1,19 +1,23 @@
 import React from 'react';
 
 class NumbersBtn extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(num) {
+    console.log(num);
+  }
   render() {
+    let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
       <div className="number-btns">
-        <button value="0">0</button>
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
+        {numbers.map(num =>
+          <button key={num} onClick={this.handleClick.bind(this, num)}>
+            {num}
+          </button>
+        )}
       </div>
     );
   }
