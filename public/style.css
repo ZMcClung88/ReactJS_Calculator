@@ -15,22 +15,7 @@
   flex-direction: column;
 }
 
-.all-btns {
-  border: 1px solid red;
-  display: flex;
-}
-
-.number-display {
-  border: 1px solid black;
-  height: 60px;
-  width: 80%;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 25px;
-}
-
-.number-btns button {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
+button {
+  height: 25px;
+  width: 25px;
 }
