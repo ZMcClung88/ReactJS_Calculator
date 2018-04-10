@@ -1,10 +1,15 @@
 import React from 'react';
 
 class CalcDisplay extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div>
-        <h1>!** Calcuation display **!</h1>
+        <h1>
+          {this.props.displayData}
+        </h1>
       </div>
     );
   }
