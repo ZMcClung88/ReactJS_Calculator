@@ -25,7 +25,7 @@ class Calculator extends React.Component {
       <div className="calculator-main">
         <h1>attempt number 2</h1>
         <CalcDisplay displayData={this.state.display} />
-        <FunctionBtns />
+        <FunctionBtns onClick={this.handleClick} />
         <NumberBtns onClick={this.handleClick} />
       </div>
     );
